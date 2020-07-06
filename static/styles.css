@@ -1,7 +1,6 @@
 html,body{
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 body{
   display: grid;
@@ -48,15 +47,14 @@ body{
 #main{
   width: 88%;
   margin: 0 auto;
-  display: grid;
-  grid-gap: 25px;
 }
 
 /**** Dark theme ****/
 /*Background*/
 .bg-dark .bg-top{
   width: 100%;
-  height: 180px;
+  height: 25%;
+  min-height: 180px;
   background-color: var(--very-dark-blue-top-bg);
 }
 .bg-dark .bg-bottom{
@@ -65,7 +63,7 @@ body{
   background-color: var(--very-dark-blue-bg);
 }
 
-/*** DASHBOARD***/
+/***** DASHBOARD *****/
 /*Header*/
 .dark #dashboard {
   display: grid;
@@ -97,18 +95,18 @@ body{
   bottom:0;
   width: 100%;
 }
-.dark .dark-mode{
+.dark #dashboard .dark-mode{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 20px;
   position: relative;
 }
-.dark .dark-mode .switch-container{
+.dark #dashboard .dark-mode .switch-container{
   position: absolute;
   right: 0;
   top: 20px;
 }
-.dark .dark-mode .switch{
+.dark #dashboard .dark-mode .switch{
   background: var(--main-toggle-dark);
   width: 50px;
   height: 25px;
@@ -117,7 +115,7 @@ body{
   align-items: center;
   position: relative;
 }
-.dark .dark-mode .switch::after{
+.dark #dashboard .dark-mode .switch::after{
   content: "";
   display: inline-block;
   width: 19px;
@@ -128,6 +126,79 @@ body{
   left: 4px;
 }
 /*Body*/
+.dark #dashboard .body{
+  display: grid;
+  grid-gap: 20px;
+}
+.dark #dashboard .body .card-dashboard{
+  width: 100%;
+  height: 220px;
+  background-color: var(--dark-desaturated-blue);
+  border-radius: 5px;
+  position: relative;
+}
+.dark #dashboard .body .card-dashboard::after{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top:0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+}
+.dark #dashboard .body .b-fc::after{
+  background-color: var(--primary-facebook);
+}
+.dark #dashboard .body .b-tw::after{
+  background-color: var(--primary-twitter);
+}
+.dark #dashboard .body .b-ig::after{ 
+  background: var(--primary-instagram);
+}
+.dark #dashboard .body .b-yt::after{
+  background-color: var(--primary-youTube);
+}
+.dark #dashboard .body .card-dashboard .card-header {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark #dashboard .body .card-dashboard .card-header img{
+  margin-right: 8px;
+}
+.dark #dashboard .body .card-dashboard .card-header span{
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--desaturated-blue)
+}
+.dark #dashboard .body .card-dashboard .card-body{
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--desaturated-blue);
+  text-transform: uppercase;
+  letter-spacing: 4.5px;
+}
+.dark #dashboard .body .card-dashboard .card-body h3{
+  color: var(--white-text);
+  font-size: 50px;
+  margin: 0;
+  letter-spacing: 0;
+}
+.dark #dashboard .body .card-dashboard .card-footer{
+  text-align: center;
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: var(--white-text);
+}
+span.up-subs{
+  color: var(--primary-lime-green);
+}
+span.down-subs{
+  color: var(--primary-bright-red);
+}
 
 
 
