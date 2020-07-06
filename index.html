@@ -4,19 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Social media dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./static/styles.css">
 </head>
 <body>
-  <div class="main">
+  <div id="main" class="dark">
     <section id="dashboard">
       <div class="header">
         <div class="title">
           <h1>Social Media Dashboard</h1>
           <span> Total Followers: 23,004 </span>
+          <div class="hr"></div>
         </div>
         <div class="dark-mode">
           <span> Dark Mode </span>
-          <div></div>
+          <div class="switch-container">
+            <span class="switch"></span>
+          </div>
         </div>
       </div>
       <div class="body">
@@ -93,6 +97,11 @@
         </article>
       </div>
     </section>
+    
+  </div>
+  <div class="bg bg-dark">
+    <div class="bg-top"></div>
+    <div class="bg-bottom"></div>
   </div>
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
