@@ -48,9 +48,21 @@ body{
 }
 footer{
   padding: 25px 0;
-  font-size: 11px;
+  font-size: 15px;
   text-align: center;
 }
+footer a{
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+.dark footer,
+.dark footer a{
+  color: var(--white-text);
+}
+.dark footer a{
+  font-weight: 700;
+}
+
 
 /************* layout **************/
 /*** Bacground ***/
@@ -119,6 +131,9 @@ footer{
   border-radius: 100%;
   position: absolute;
   right: 4px;
+  transition-property: right, left;
+  transition-duration: 4s;
+  transition-timing-function: ease-in; 
 }
 /** Body **/
 #dashboard .body{
