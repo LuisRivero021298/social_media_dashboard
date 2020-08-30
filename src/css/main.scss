@@ -1,1 +1,11 @@
+@import 'lib/reset';
 @import 'lib/varibales';
+
+/*layouts*/
+@import 'layout/grid';
+
+@import 'base/card';
+
+/*components*/
+@import 'components/switch-theme';
+@import 'components/card-dashboard';

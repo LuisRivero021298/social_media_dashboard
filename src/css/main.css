@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------------- *\
+|             $COLORS             |
+\* ----------------------------- */
+/* Branding color */
+/*Dark theme*/
+/*light theme*/
+/*layouts*/
+#main {
+  width: 88%;
+  margin: 0 auto;
+}
+
+#dashboard {
+  display: grid;
+  grid-template-rows: 170px 1fr;
+  grid-gap: 15px;
+}
+#dashboard .dashboard__header {
+  display: grid;
+  grid-template-rows: 65% 35%;
+}
+#dashboard .dashboard__header--title {
+  position: relative;
+}
+#dashboard .dashboard__header .darkmode {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 20px;
+  position: relative;
+}
+#dashboard .dashboard__header .darkmode .switch__container {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+#dashboard .dashboard__body {
+  display: grid;
+  grid-gap: 20px;
+}
+
+#overview {
+  display: grid;
+  grid-gap: 10px;
+}
+#overview .overview__body {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f0f2fa;
+}
+
+/*components*/
+.switch__container .switch {
+  background: #aeb3cb;
+  width: 50px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.switch__container .switch ::after {
+  content: "";
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  background-color: #f0f2fa;
+  border-radius: 100%;
+  position: absolute;
+  right: 4px;
+  transition-property: right, left;
+  transition-duration: 4s;
+  transition-timing-function: ease-in;
+}
+
+.card--dashboard {
+  width: 100%;
+  height: 220px;
+  position: relative;
+}
+.card--dashboard::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.b-fc::after {
+  background-color: #198ff5;
+}
+
+.b-tw::after {
+  background-color: #1ca0f2;
+}
+
+.b-ig::after {
+  background: linear-gradient(90deg, #fdc468, #df4996);
+}
+
+.b-yt::after {
+  background-color: #c4032a;
+}
+
+/*# sourceMappingURL=main.css.map */

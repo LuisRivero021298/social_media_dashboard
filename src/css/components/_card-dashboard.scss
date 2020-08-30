@@ -1,0 +1,28 @@
+.card--dashboard {
+  width: 100%;
+  height: 220px;
+  position: relative;
+
+  &::after{
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    top:0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+  }
+}
+
+.b-fc::after{
+  background-color: $primary-facebook;
+} 
+.b-tw::after{
+  background-color: $primary-twitter;
+}
+.b-ig::after{ 
+  background: $primary-instagram;
+}
+.b-yt::after{
+  background-color: $primary-youTube;
+}
