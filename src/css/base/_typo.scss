@@ -1,2 +1,14 @@
 $main-typo: 'Inter', sans-serif;
 $main-typo-size: 14px;
+
+%title {
+  color: $very-dark-blue;
+  font-size: 1.7em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+%sub-title {
+  color: $dark-grayish-blue;
+  font-weight: 700;
+}

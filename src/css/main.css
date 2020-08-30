@@ -10,6 +10,18 @@
 /* Branding color */
 /*Dark theme*/
 /*light theme*/
+#dashboard .dashboard__header--title {
+  color: #1e202a;
+  font-size: 1.7em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+#dashboard .dashboard__header .darkmode span, #dashboard .dashboard__header--text {
+  color: #63687e;
+  font-weight: 700;
+}
+
 .card {
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -22,12 +34,12 @@ body {
   font-size: 14px;
 }
 
-/*layouts*/
 #main {
   width: 88%;
   margin: 0 auto;
 }
 
+/*layouts*/
 #dashboard {
   display: grid;
   grid-template-rows: 170px 1fr;
@@ -39,6 +51,16 @@ body {
 }
 #dashboard .dashboard__header--title {
   position: relative;
+}
+#dashboard .dashboard__header--content {
+  position: relative;
+}
+#dashboard .dashboard__header--content .hr {
+  border-bottom: 1px solid #63687e;
+  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 #dashboard .dashboard__header .darkmode {
   display: grid;
@@ -56,15 +78,6 @@ body {
   grid-gap: 20px;
 }
 
-#overview {
-  display: grid;
-  grid-gap: 10px;
-}
-#overview .overview__body {
-  display: grid;
-  grid-gap: 20px;
-}
-
 /*components*/
 .switch__container .switch {
   background: #aeb3cb;
@@ -75,7 +88,7 @@ body {
   align-items: center;
   position: relative;
 }
-.switch__container .switch ::after {
+.switch__container .switch::after {
   content: "";
   display: inline-block;
   width: 19px;
