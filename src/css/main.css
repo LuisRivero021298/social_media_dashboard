@@ -10,6 +10,18 @@
 /* Branding color */
 /*Dark theme*/
 /*light theme*/
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #f0f2fa;
+}
+
+body {
+  position: relative;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
 /*layouts*/
 #main {
   width: 88%;
@@ -51,12 +63,6 @@
 #overview .overview__body {
   display: grid;
   grid-gap: 20px;
-}
-
-.card {
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  background-color: #f0f2fa;
 }
 
 /*components*/

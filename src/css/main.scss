@@ -1,10 +1,15 @@
 @import 'lib/reset';
 @import 'lib/varibales';
 
+@import 'base/typo';
+@import 'base/card';
+
+@import 'views/home';
+
 /*layouts*/
 @import 'layout/grid';
 
-@import 'base/card';
+
 
 /*components*/
 @import 'components/switch-theme';
