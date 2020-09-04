@@ -1,0 +1,13 @@
+#overview {
+  display: grid;
+  grid-gap: 10px;
+
+  .header__title {
+    @extend %title;
+  }
+  
+  .overview__body {
+    display: grid;
+    grid-gap: 20px;
+  }
+}

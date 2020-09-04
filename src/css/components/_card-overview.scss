@@ -1,0 +1,32 @@
+%layot__card__overview {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card--overview {
+  padding: 22px 28px;
+  display: grid;
+  grid-gap: 25px;
+
+  &__header {
+    @extend %layot__card__overview;
+
+    h4 {
+      color: $dark-grayish-blue;
+      font-size: 15px;
+      margin: 0;
+    }
+  }
+
+  &__body {
+    @extend %layot__card__overview;
+
+    span:not(.percentage) {
+      color: $very-dark-blue;
+      font-size: 35px;
+      font-weight: 700;
+    }
+  }
+  
+}
