@@ -7,25 +7,28 @@
     display: grid;
     grid-template-rows: 65% 35%;
     
-    &--title{
-      position: relative;
-      @extend %title;
-    }
-    
-    &--content {
-      position: relative;
-      .hr{
-        border-bottom: 1px solid $dark-grayish-blue;
-        margin-top: 20px;
-        position: absolute;
-        bottom:0;
-        width: 100%;
+    .header{
+      &__title{
+        position: relative;
+        @extend %title;
+      }
+      
+      &__content {
+        position: relative;
+        .hr{
+          border-bottom: 1px solid $dark-grayish-blue;
+          margin-top: 20px;
+          position: absolute;
+          bottom:0;
+          width: 100%;
+        }
+      }
+  
+      &__text{
+        @extend %sub-title;
       }
     }
-
-    &--text{
-      @extend %sub-title;
-    }
+    
 
     .darkmode{
       display: grid;

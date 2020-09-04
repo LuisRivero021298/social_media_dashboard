@@ -26,7 +26,7 @@
     span{
       font-size: 12px;
       font-weight: 700;
-      color: var(--dark-grayish-blue);
+      color: $dark-grayish-blue;
     } 
   }
 
@@ -34,12 +34,12 @@
     margin-top: 20px;
     text-align: center;
     font-size: 13px;
-    color: var(--dark-grayish-blue);
+    color: $dark-grayish-blue;
     text-transform: uppercase;
     letter-spacing: 4.5px;
 
     h3{
-      color: var(--very-dark-blue);
+      color: $very-dark-blue;
       font-size: 50px;
       margin: 0;
       letter-spacing: 0;
