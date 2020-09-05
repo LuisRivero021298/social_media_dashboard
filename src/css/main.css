@@ -93,6 +93,11 @@ body {
   width: 88%;
   margin: 0 auto;
 }
+@media (min-width: 1200px) {
+  #main {
+    width: 82%;
+  }
+}
 
 /*layouts*/
 #dashboard {
@@ -100,9 +105,21 @@ body {
   grid-template-rows: 170px 1fr;
   grid-gap: 15px;
 }
+@media (min-width: 1200px) {
+  #dashboard {
+    grid-template-rows: 100px 1fr;
+    grid-gap: 45px;
+  }
+}
 #dashboard .dashboard__header {
   display: grid;
   grid-template-rows: 65% 35%;
+}
+@media (min-width: 1200px) {
+  #dashboard .dashboard__header {
+    grid-template-rows: initial;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 #dashboard .dashboard__header .header__title {
   position: relative;
@@ -117,16 +134,25 @@ body {
   bottom: 0;
   width: 100%;
 }
+@media (min-width: 1024px) {
+  #dashboard .dashboard__header .header__content .hr {
+    display: none;
+  }
+}
 #dashboard .dashboard__header .darkmode {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 20px;
   position: relative;
 }
-#dashboard .dashboard__header .darkmode .switch__container {
-  position: absolute;
-  right: 0;
-  top: 20px;
+@media (min-width: 1200px) {
+  #dashboard .dashboard__header .darkmode {
+    padding-top: 0px;
+    grid-template-columns: initial;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 #dashboard .dashboard__body {
   display: grid;
@@ -222,6 +248,17 @@ footer a {
 }
 
 /*components*/
+.switch__container {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+@media (min-width: 1200px) {
+  .switch__container {
+    position: initial;
+    margin-left: 10px;
+  }
+}
 .switch__container .switch {
   background: #aeb3cb;
   width: 50px;

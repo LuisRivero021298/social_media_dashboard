@@ -1,4 +1,11 @@
 .switch__container{
+  position: absolute;
+  right: 0;
+  top: 20px;
+  @media (min-width: 1200px) {
+    position: initial;
+    margin-left: 10px;
+  }
   .switch{
     background: $main-toggle;
     width: 50px;
