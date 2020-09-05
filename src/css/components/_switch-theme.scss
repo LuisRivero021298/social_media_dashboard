@@ -23,3 +23,13 @@
     }
   }
 } 
+
+.dark {
+  .switch{
+    background: $main-toggle-dark;
+    &::after{
+      background-color: $dark-desaturated-blue;
+      left: 4px;
+    }
+  }
+}

@@ -17,3 +17,12 @@
     background-color: $white-bg;
   }
 }
+
+.dark {
+  .bg__top{
+    background-color: $very-dark-blue-top-bg;
+  }
+  .bg__bottom{
+    background-color: $very-dark-blue-bg;
+  }
+}

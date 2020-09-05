@@ -26,7 +26,6 @@
     span{
       font-size: 12px;
       font-weight: 700;
-      color: $dark-grayish-blue;
     } 
   }
 
@@ -39,7 +38,6 @@
     letter-spacing: 4.5px;
 
     h3{
-      color: $very-dark-blue;
       font-size: 50px;
       margin: 0;
       letter-spacing: 0;
@@ -65,4 +63,12 @@
 }
 .b-yt::after{
   background-color: $primary-youTube;
+}
+
+.dark {
+  .card--dashboard {
+    &__body {
+      color: $desaturated-blue;
+    }
+  }
 }

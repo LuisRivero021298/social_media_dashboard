@@ -7,8 +7,14 @@ $main-typo-size: 14px;
   margin-top: 30px;
   margin-bottom: 10px;
 }
+.dark %title {
+  color: $white-text;
+}
 
 %sub-title {
   color: $dark-grayish-blue;
   font-weight: 700;
+}
+.dark %sub-title {
+  color: $desaturated-blue;
 }
