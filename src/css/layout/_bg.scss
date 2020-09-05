@@ -10,11 +10,18 @@
     height: 10%;
     min-height: 180px;
     background-color: $very-pale-blue;
+
+    @media (min-width: 1024px) {
+      height: 35%;
+    }
   }
   .bg__bottom {
     width: 100%;
     height: 90%;
     background-color: $white-bg;
+    @media (min-width: 1024px) {
+      height: 65%;
+    }
   }
 }
 

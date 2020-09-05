@@ -216,10 +216,20 @@ body {
   min-height: 180px;
   background-color: #f5f7ff;
 }
+@media (min-width: 1024px) {
+  .bg .bg__top {
+    height: 35%;
+  }
+}
 .bg .bg__bottom {
   width: 100%;
   height: 90%;
   background-color: white;
+}
+@media (min-width: 1024px) {
+  .bg .bg__bottom {
+    height: 65%;
+  }
 }
 
 .dark .bg__top {
