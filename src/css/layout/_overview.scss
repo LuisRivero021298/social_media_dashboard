@@ -9,5 +9,8 @@
   .overview__body {
     display: grid;
     grid-gap: 20px;
+    @include grid-columns (768px, 1fr 1fr);
+    @include grid-columns (1024px, 1fr 1fr 1fr);
+    @include grid-columns (1200px, 1fr 1fr 1fr 1fr);
   }
 }

@@ -322,6 +322,7 @@ span.up-subs::before{
 .dark #overview .overview-body .card-overview .card-body > span:not(.percentage) {
   color: var(--white-text);
 } 
+
 /*** RESPONSIVE ***/
 @media only screen and (min-height: 1000px){
   html,body{

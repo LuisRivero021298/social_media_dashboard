@@ -2,7 +2,6 @@
   display: grid;
   grid-template-rows: 170px 1fr;
   grid-gap: 15px;
-
   .dashboard__header {
     display: grid;
     grid-template-rows: 65% 35%;
@@ -43,6 +42,9 @@
   .dashboard__body{
     display: grid;
     grid-gap: 20px;
+    @include grid-columns (768px, 1fr 1fr);
+    @include grid-columns (1024px, 1fr 1fr 1fr);
+    @include grid-columns (1200px, 1fr 1fr 1fr 1fr);
   }
 }
 
