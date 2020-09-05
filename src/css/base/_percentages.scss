@@ -10,19 +10,18 @@
 }
 
 span.up-subs{
-  color: $primary-lime-green;
+  color: $primary-success;
   position: relative;
-  ::before {
+  &::before {
     @extend %before_subs;
-    border-bottom: 5px solid $primary-lime-green;
+    border-bottom: 5px solid $primary-success;
   }
 }
 span.down-subs{
-  color: $primary-bright-red;
+  color: $primary-alert;
   position: relative;
-
-  ::before {
+  &::before {
     @extend %before_subs;
-    border-top: 5px solid $primary-bright-red;
+    border-top: 5px solid $primary-alert;
   }
 }

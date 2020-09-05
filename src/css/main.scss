@@ -3,12 +3,14 @@
 
 @import 'base/typo';
 @import 'base/card';
+@import 'base/percentages';
 
 @import 'views/home';
 
 /*layouts*/
 @import 'layout/dashboard';
 @import 'layout/overview';
+@import 'layout/bg';
 
 /*components*/
 @import 'components/switch-theme';

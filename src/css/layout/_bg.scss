@@ -1,0 +1,19 @@
+.bg { 
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  .bg__top {
+    width: 100%;
+    height: 10%;
+    min-height: 180px;
+    background-color: $very-pale-blue;
+  }
+  .bg__bottom {
+    width: 100%;
+    height: 90%;
+    background-color: $white-bg;
+  }
+}
